@@ -2,19 +2,19 @@
 using namespace std;
 
 /*HOMEWORK 2
-bool isEven(int x);
-bool isOdd(int x)
-bool isFactor(int x, int f);
-int sumEven(int a[])
+bool isEven
+bool isOdd
+bool isFactor;
+int sumEven
 sumOdd
 maxN
 minN
 maxArray
 minArray
-bool isFound(int x, int a[])
-void swapN(int a, int b)*/
+bool isFound
+void swapN*/
 
-// definisi sumEven
+// deklarasi sumEven
 int sumEven(int a[], int n)
 {
     int sumEven = 0;
@@ -28,7 +28,7 @@ int sumEven(int a[], int n)
     return sumEven;
 }
 
-// definisi sumOdd
+// deklarasi sumOdd
 int sumOdd(int a[], int n)
 {
     int sumOdd = 0;
@@ -42,7 +42,7 @@ int sumOdd(int a[], int n)
     return sumOdd;
 }
 
-// definisi maxN
+// deklarasi maxN
 int maxN(int a, int b)
 {
     if (a > b)
@@ -55,7 +55,7 @@ int maxN(int a, int b)
     }
 }
 
-// definisi minN
+// deklarasi minN
 int maxN(int a, int b)
 {
     if (a < b)
@@ -68,7 +68,7 @@ int maxN(int a, int b)
     }
 }
 
-// definisi maxArray
+// deklarasi maxArray
 int maxArray(int a[], int n)
 {
     int max = arr[0];
@@ -82,7 +82,7 @@ int maxArray(int a[], int n)
     return max;
 }
 
-// definisi minArray
+// deklarasi minArray
 int minArray(int a[], int n)
 {
     int min = arr[0];
@@ -96,7 +96,7 @@ int minArray(int a[], int n)
     return min;
 }
 
-// definisi isFound
+// deklarasi isFound
 bool isFound(int x, int a[])
 {
     for (int i = 0; i < size; i++)
