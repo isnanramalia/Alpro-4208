@@ -1,0 +1,21 @@
+KETENTUAN UMUM
+1. semua fungsi bisa dilektakkan di dalam 'int main' tnp harus ada 'deklarasi' atau 'definisi'
+2. semua fungsi bisa dideklarasikan dan dipanggil dalam 'int main' tnp harus ada 'definisi'
+3. semua fungsi bisa dipisah dalam 3 bagian. Dideklarasikan di atas 'int main', fungsi utama di int main, dan dipanggil dalam definisi
+
+YANG KITA GUNAKAN
+kondisi 3: ada deklarasi, int main, dan definisi
+
+NOTE: int n = sizeof(arr) / sizeof(*arr);
+perhitungan ->
+sizeof(x) = jumlah_elemen * ukuran_setiap_elemen
+           = 5 * sizeof(int)
+           = 5 * 4 bytes
+           = 20 bytes
+
+sizeof(*x) = sizeof(int)
+           = 4 bytes
+           
+j = sizeof(x) / sizeof(*x)
+  = 20 bytes / 4 bytes
+  = 5
