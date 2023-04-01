@@ -1,34 +1,6 @@
 #include <iostream>
 using namespace std;
 
-void insertionSort(int arr[], int n);
-
-int main()
-{
-    int arr[] = {6, 20, 4, 10, 2}; // array berisi 5 index yg blm urut
-    int n = 5;                     // jumlah index dalam array
-
-    cout << "Sebelum diurutkan: ";
-    for (int a = 0; a < n; a++)
-    { // menampilkan data yg blm diurutkan
-        cout << arr[a] << " ";
-    }
-    cout << endl
-         << endl;
-
-    insertionSort(arr, n); // utk melakukan proses pengurutan pada array yg diberikan
-
-    cout << endl
-         << "Setelah diurutkan : ";
-    for (int a = 0; a < n; a++)
-    {
-        cout << arr[a] << " ";
-    }
-    cout << endl;
-
-    return 0;
-}
-
 void insertionSort(int arr[], int n)
 {
     int temp;
@@ -59,4 +31,33 @@ void insertionSort(int arr[], int n)
             cout << endl;
         }
     }
+}
+
+void tampilArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+}
+
+int main()
+{
+
+    int arr[] = {6, 20, 4, 10, 2}; // array berisi 5 index yg blm urut
+    int n = 5;                     // jumlah index dalam array
+
+    cout << "Sebelum diurutkan: ";
+    tampilArray(arr, n);
+    cout << endl
+         << endl;
+
+    insertionSort(arr, n); // utk melakukan proses pengurutan pada array yg diberikan
+
+    cout << endl
+         << "Setelah diurutkan : ";
+    tampilArray(arr, n);
+    cout << endl;
+
+    return 0;
 }
