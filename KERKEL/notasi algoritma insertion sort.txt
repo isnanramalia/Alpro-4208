@@ -1,0 +1,55 @@
+JUDUL: pengurutan bilangan menggunakan metode insertion sort
+
+FUNGSI SWAP
+FUNGSI: insertionSort(arr[]: integer) -> integer
+
+KAMUS LOKAL: 
+temp: integer
+
+ALGORITMA:
+b interval [1, .., b<n]
+	c interval [c=b, c-1, .. c>0]
+		if (arr[c] < arr[c-1]) then
+			swapN (arr[c]), a[c-1])
+		else (break)
+		endif
+	end
+end
+
+output("--------proses penukaran data--------")
+output("index ke-" + b + "->")
+i interval [i, i+1, .., i<n]
+	output(arr[i] + " ")
+end
+
+--------------------------------------------------------------
+FUNGSI ARRAY
+FUNSI: tampilArray(arr[]: integer) -> integer
+
+ALGORITMA:
+i interval [0, ..., n-1]
+	output(arr[i] + " ")
+end
+
+--------------------------------------------------------------
+FUNGSI main() -> integer
+
+KAMUS: 
+- arr[] : integer
+- n : integer
+
+ALGORITMA:
+int: arr[] <- {6, 20, 4, 10, 2}
+int: n <- 5
+
+output("sebelum diurutkan: ")
+tampilArray(arr, n)
+
+insertionSort(arr, n)
+
+output("setelah diurutkan: ")
+tampilArray(arr,n)
+
+return 0
+end
+
