@@ -1,5 +1,5 @@
 #include <iostream>
-
+ 
 using namespace std;
 
 //HOMEWORK 2 GITHUB "TUGAS2"
