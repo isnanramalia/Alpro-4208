@@ -3,10 +3,10 @@ using namespace std;
 
 void bubble(int arr[], int n)
 {
-    if (n == 1)
+    if (n == 1) // base case
         return;
 
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n - 1; i++)
     {
         if (arr[i] > arr[i + 1])
         {
@@ -15,7 +15,7 @@ void bubble(int arr[], int n)
             arr[i + 1] = temp;
         }
     }
-    bubble(arr, n - 1);
+    bubble(arr, n - 1); // rekursif
 }
 
 int main()

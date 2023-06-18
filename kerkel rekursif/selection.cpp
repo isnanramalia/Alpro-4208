@@ -16,7 +16,7 @@ void selectionSort(int arr[], int n)
     int minIndex = 0;
     for (int i = 1; i < n; i++)
     {
-        if (arr[i] < arr[minIndex])
+        if (arr[i] > arr[minIndex])
         {
             minIndex = i;
         }
