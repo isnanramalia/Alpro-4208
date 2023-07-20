@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+// akses member menggunakan pointer dlm structure
 
 struct Sepeda
 {
